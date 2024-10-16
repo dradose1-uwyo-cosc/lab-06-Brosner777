@@ -1,8 +1,8 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# [Braxton Rosner]
+## [Lab 06]
+## [Submission date: 10/16/2024]
 ## Worked with/sources 
-* example
+* Python Crash Course
 * example
 * example
 * example
