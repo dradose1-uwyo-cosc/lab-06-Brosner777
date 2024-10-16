@@ -3,7 +3,7 @@
 # 10/16/2024
 # Lab 06
 # Lab Section: 15
-# Sources, people worked with, help given to: Python Crash Course: Use of .items()
+# Sources, people worked with, help given to: Python Crash Course: Use of .items(). Helped Colter with code
 # your
 # comments
 # here
