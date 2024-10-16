@@ -1,9 +1,9 @@
-# Your Name Here
+# Braxton Rosner
 # UWYO COSC 1010
-# Submission Date
+# 10/16/2024
 # Lab 06
-# Lab Section: 
-# Sources, people worked with, help given to: 
+# Lab Section: 15
+# Sources, people worked with, help given to: Python Crash Course: Use of .items()
 # your
 # comments
 # here
@@ -84,17 +84,41 @@ print(len(random_string)) # Print out the size for reference
 #Will need to first declare a dictionary 
 
 # Output: each letter and its corresponding occurrence in alphabetical order
-
+character = {}
+for letter in random_string:
+    if letter in character:
+        character[letter] += 1
+    else:
+        character[letter] =1
+character_sorted=dict(sorted(character.items()))
+print(character_sorted)
 print("*"*75)
 # Output which letter occurred the most 
+max_value=0
+max_key=None
+for key, value in character_sorted.items():
+    if value > max_value:
+        max_value= value
+        max_key= key
 
-most_occurred = ""
-least_occurred = ""
+most_occurred = max_key
 
 print(f"The letter that occurred the most is {most_occurred}")
 print("*"*75)
 # Output which letter occurred the least 
-print(f"The letter that occurred the most is {least_occurred}")
+min_value= max_value
+min_key=None
+for key, value in character_sorted.items():
+    if value < min_value:
+        min_value=value
+        min_key=key
+least_occurred= min_key
+print(f"The letter that occurred the least is {least_occurred}")
 print("*"*75)
 
 # Output what the percentage of the string each character is, again in alphabetical
+total_letters=2500
+character_percent={}
+for key, value in character_sorted.items():
+    character_percent[key]=(value/total_letters)*100
+print(character_percent)
